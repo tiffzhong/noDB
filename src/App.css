@@ -1,0 +1,195 @@
+html,
+body,
+#root,
+.App {
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+  background-image: url("./cem.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header-container {
+  height: 350px;
+  width: 100%;
+  margin: 10px;
+  font-size: 40px;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-container > h1 {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-style: italic;
+  font-size: 100px;
+  text-align: left;
+}
+.header-container > h6 {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-size: 90px;
+  text-align: right;
+}
+.header-container > h3 {
+  padding: 10px;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-size: 25px;
+}
+
+.header-container > h4 {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.search-container {
+  margin: 5px;
+}
+
+.App > section {
+  max-width: 600px;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  font-size: 18px;
+  width: 250px;
+  height: 40px;
+  margin: 0 10px;
+}
+button {
+  width: 150px;
+  height: 40px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.update {
+  width: 70px;
+  height: 30px;
+}
+
+.delete {
+  width: 70px;
+  height: 30px;
+}
+
+.add {
+  width: 150px;
+  height: 30px;
+}
+.favoriteUSState img {
+  width: 160px;
+  height: 100px;
+  margin: 5px;
+}
+.all-flags-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-flags-container img {
+  width: 160px;
+  height: 100px;
+  margin: 5px;
+}
+
+.selected-flag-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.selected-flag-container img {
+  width: 140px;
+  height: 80px;
+  margin: 5px;
+}
+
+.favorite-flag-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.favorite-flag-container img {
+  width: 140px;
+  height: 80px;
+  margin: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.modal-content {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  position: absolute;
+  border: 1px;
+  border-color: grey;
+  background: white;
+  opacity: 0.96;
+  width: 50%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-content h1 {
+  font-size: 40px;
+  margin: 5px;
+}
+
+.modal-content h4 {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.modal-content img {
+  margin: 2px;
+  height: 150px;
+  width: 220px;
+}
+
+.modal-content .modal-close {
+  width: 30px;
+  height: 30px;
+  color: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  border: none;
+}
